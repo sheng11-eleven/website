@@ -1,0 +1,115 @@
+:root{
+    --background-color: #cdd1e4;
+    --spacing-sm: 1rem;
+	--spacing-md: 2rem;
+	--spacing-lg: 4rem;
+	--border-radius: 8px;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: "segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+#header-div{
+    color: #01017a;
+}
+
+a{
+    color: #0b7fab;
+}
+
+#project-card-header{
+    color: #284387;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+	margin-bottom: var(--spacing-sm);
+}
+
+main {
+	padding: var(--spacing-lg) 0;
+}
+
+section {
+	margin-bottom: var(--spacing-lg);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md)
+}
+
+.project-card {
+    background-color: #99a2ff;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+	display: grid;
+	gap: var(--spacing-sm);
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: var(--border-radius);
+}
+
+button {
+    width: 100px;
+    margin: auto;   /*Set into the middle*/
+	background-color: #01017a;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #99a2ff;
+}
+
+nav ul li {
+    margin: 0 var(--spacing-sm)
+}
+
+.social-links {
+    margin-top: 13px;
+	display: flex;
+	justify-content: center;
+	gap: 16px; /*must use flex*/
+}
+
+footer {
+    background-color: #99a2ff;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
+
